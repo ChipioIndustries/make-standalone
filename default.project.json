@@ -1,5 +1,5 @@
 {
-	"name": "makeStandalone",
+	"name": "make-standalone",
 	"tree": {
 		"$path": "src"
 	}
