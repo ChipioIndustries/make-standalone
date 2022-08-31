@@ -2,8 +2,8 @@ name: release
 
 on:
   push:
-    tags:
-      - "v*"
+    # tags:
+    #   - "v*"
 
 jobs:
   build:
@@ -31,6 +31,7 @@ jobs:
       - name: Publish to Wally
         shell: bash
         run: |
+          pwd
           ./wally publish
 
       - name: Get version
