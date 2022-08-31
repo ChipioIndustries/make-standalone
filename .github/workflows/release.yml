@@ -2,8 +2,8 @@ name: release
 
 on:
   push:
-    # tags:
-    #   - "v*"
+    tags:
+      - "v*"
 
 jobs:
   build:
@@ -27,12 +27,7 @@ jobs:
         run: |
           mkdir -p ~/.wally
           echo "$WALLY_AUTH" > ~/.wally/auth.toml
-
-      - name: Publish to Wally
-        shell: bash
-        run: |
-          ls
-          ./wally publish
+          ./wally.exe publish
 
       - name: Get version
         id: get_version
