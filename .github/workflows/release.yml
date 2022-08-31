@@ -27,7 +27,7 @@ jobs:
         run: |
           mkdir -p ~/.wally
           echo "$WALLY_AUTH" > ~/.wally/auth.toml
-          wally publish
+          ./wally publish
 
       - name: Get version
         id: get_version
