@@ -1,0 +1,20 @@
+{
+	"name": "make-standalone",
+	"tree": {
+		"$className": "DataModel",
+
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"DevPackages": {
+				"$path": "../DevPackages"
+			},
+			"Packages": {
+				"$className": "Folder",
+				"$path": "../Packages",
+				"makeStandalone": {
+					"$path": "../default.project.json"
+				}
+			}
+		}
+	}
+}

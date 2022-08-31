@@ -1,0 +1,6 @@
+{
+	"name": "makeStandalone",
+	"tree": {
+		"$path": "src"
+	}
+}
