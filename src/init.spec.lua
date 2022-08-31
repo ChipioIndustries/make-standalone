@@ -18,7 +18,8 @@ return function()
 				end).to.throw()
 			end)
 			it("should support Instances", function()
-				local object = Instance.new("Part", script)
+				local object = Instance.new("Part")
+				object.Parent = script
 				local method = object.Destroy
 				local standalone = makeStandalone(method, object)
 				standalone()
