@@ -4,7 +4,7 @@ description = "Utility function for converting methods to standalone functions."
 version = "1.0.6"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
-exclude = ["wally.exe", ".git"]
+exclude = ["wally.exe", "aftman"]
 
 [dependencies]
 t = "osyrisrblx/t@3.0.0"

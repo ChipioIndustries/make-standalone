@@ -13,10 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2.3.4
 
-      - name: Move aftman
-        run: |
-          cd ..
-
       - uses: ok-nick/setup-aftman@v0.1.0
         name: Install Aftman
         with:
@@ -29,8 +25,6 @@ jobs:
         env:
           WALLY_AUTH: ${{secrets.WALLY_AUTH}}
         run: |
-          ls
-          cd make-standalone
           mkdir -p ~/.wally
           echo "$WALLY_AUTH" > ~/.wally/auth.toml
           wally publish
