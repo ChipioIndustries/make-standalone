@@ -16,11 +16,9 @@ jobs:
       - uses: ok-nick/setup-aftman@v0.1.0
         name: Install Aftman
         with:
-            working-directory: ~/
             token: ${{ SECRETS.GITHUB_TOKEN }}
             version: "v0.2.6"
             trust-check: false
-            path: aftman.toml
 
       - name: Add Wally Auth
         shell: bash

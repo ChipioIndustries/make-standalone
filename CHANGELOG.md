@@ -1,3 +1,6 @@
+## v1.0.7
+
+* Fix Wally release again
 ## v1.0.6
 
 * Fix Wally release
